@@ -12,13 +12,11 @@ public class Main {
         publisher.subscribe(numberSubscriber);
         publisher.subscribe(symbolSubscriber);
 
-        String stringList[] = { "KMITL", "31-10-2564", "2021", "COVID-19", "SAD", "(^-^)", "Hello World!", "Behavior Patterns", "1234567890"};
+        String stringList[] = { "test", "123456", "987654", "ABCD4567", "5555", "****", "@@@@REAS!", "^^^^^dfafadf1412423", "$$$$1124"};
         for (String s : stringList) {
             System.out.println("String : \"" + s + "\"");
             publisher.publish(s);
         }
-
-//        System.out.println();
 
     }
 }
